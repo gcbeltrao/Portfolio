@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+nav{
+  background-color: #000000db;
+  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  font: bold 20px Raleway, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav > div > a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 20px;
+}
+nav > div > a:hover {
+  color: blueviolet;
+}
+nav > div > a > img{
+  margin: 0 5px;
+}
+
+/* main - home.ejs */
+
+main{
+  background-image: linear-gradient(90deg, #000000e5, #000000db);
+}
+.home > section{
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 0;
+}
+.home > section > div {
+  line-height: 1.5;
+  width: 300px;
+}
+.home > section > div > h1 >span{
+  color: #8a2be2;
+}
+
+/* main - resume.ejs */
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+  font-size: 16px;
+  padding: 30px 0;
+}
+.resume > .container1{
+  background-color: #293E49;
+  color: white;
+  width: 250px;
+  padding: 25px;
+}
+.resume > .container2{
+  background-color: rgb(255, 255, 255);
+  width: 450px;
+  padding: 25px;
+}
+.resume > section > div > h1, h2, h3 {
+  margin-bottom: 20px;
+}
+.resume > section > div > h3{
+  margin-top: 30px;
+}
+.resume > section > div > ul {
+  list-style:circle;
+  padding-left: 25px;
+}
+.resume a {
+  text-decoration: none;
+  color: white;
+}
+.resume a:hover {
+  color:#8a2be2
+}
+#btn{
+  background-image: linear-gradient(90deg, #000000e5, #000000db);
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#btn > a{
+  border: 1px solid;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border-color: #8a2be2;
+  background-color: #8a2be2;
+}
+
+/* main - about.ejs */
+
+
+
+/* Footer */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.897);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    font-size: 16px;
+}
+footer > div > a {
+  padding: 0 20px;
+}

@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs"); -%>
+
+<main class="home">
+    <section>
+        <div>
+            <h1>Hello there!</h1>
+            <h1>I'm <span>Gabriel Beltrão</span></h1>
+            <h1><span class="auto-type"></span></h1>
+        </div>
+        <div class="image">
+            <img src="images/perfil.png">
+        </div>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Engineer", "Front-end Developer", "Fullstack Developer"],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true
+    });
+</script>
+
+<%- include("partials/footer.ejs"); -%>
