@@ -24,7 +24,7 @@ nav > div > a {
   padding: 0px 20px;
 }
 nav > div > a:hover {
-  color: blueviolet;
+  color: #8a2be2;
 }
 nav > div > a > img{
   margin: 0 5px;
@@ -73,11 +73,11 @@ main{
   width: 450px;
   padding: 25px;
 }
-.resume > section > div > h1, h2, h3 {
+.resume > section > div > h1, h2 {
   margin-bottom: 20px;
 }
 .resume > section > div > h3{
-  margin-top: 30px;
+  margin: 30px 0;
 }
 .resume > section > div > ul {
   list-style:circle;
@@ -108,7 +108,36 @@ main{
 
 /* main - about.ejs */
 
-
+.about > h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.about > .txt-container{
+  max-width: 650px;
+  margin: auto;
+}
+.about > .txt-container > p{
+  line-height: 2;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+}
+.about > .skill-container{
+  
+}
+.about > .skill-container > h3 {
+  border: 1px solid #8a2be2;
+  color: white;
+  min-width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 0 15px;
+}
+.about > .skill-container > h3:hover {
+  transition-duration: .5s;
+  transform: scale(1.2);
+}
 
 /* Footer */
 
