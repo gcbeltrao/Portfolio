@@ -22,7 +22,6 @@ nav > div > a {
   text-decoration: none;
   color: white;
   padding: 0px 20px;
-  display: inline;
 }
 nav > div > a:hover {
   color: #8a2be2;
@@ -32,6 +31,24 @@ nav > div > a > img{
 }
 nav >  #hamburguer-icon {
   display: none;
+  justify-content: center;
+  color: white;
+}
+#menu{
+  display: none;
+  background-color: #000000db;
+  text-align: center;
+  padding: 5px 0;
+}
+#menu > a{
+  color: white;
+  text-decoration: none;
+  font: bold 20px Raleway, sans-serif;
+  display: inline-block;
+  padding: 5px 0;
+}
+#menu > a:hover{
+  color:#8a2be2;
 }
 
 /* main - home.ejs */
@@ -160,6 +177,15 @@ footer > div > a {
 }
 
 @media (max-width: 767px){
+  nav > #hamburguer-icon {
+    display: block;
+  }
+  nav > #itens{
+    display: none;
+  }
+  #menu{
+    display: none;
+  }
 
   .home > section {
     display: flex;
