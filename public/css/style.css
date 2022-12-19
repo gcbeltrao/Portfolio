@@ -22,6 +22,7 @@ nav > div > a {
   text-decoration: none;
   color: white;
   padding: 0px 20px;
+  display: inline;
 }
 nav > div > a:hover {
   color: #8a2be2;
@@ -33,19 +34,6 @@ nav >  #hamburguer-icon {
   display: none;
 }
 
-@media (max-width: 475px){
-  nav >  #hamburguer-icon{
-    display: block;
-  }
-  nav > div > a {
-    display: none;
-  }
-}
-
-
-
-
-
 /* main - home.ejs */
 
 main{
@@ -56,7 +44,6 @@ main{
   font-size: 20px;
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
   align-items: center;
   padding: 50px 0;
 }
@@ -73,7 +60,6 @@ main{
 
 .resume {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   color: black;
   font-size: 16px;
@@ -82,12 +68,13 @@ main{
 .resume > .container1{
   background-color: #293E49;
   color: white;
-  width: 250px;
+  max-width: 250px;
   padding: 25px;
 }
 .resume > .container2{
   background-color: rgb(255, 255, 255);
-  width: 450px;
+  max-width: 450px;
+  min-width: 300px;
   padding: 25px;
 }
 .resume > section > div > h1, h2 {
@@ -163,10 +150,43 @@ footer{
     color: white;
     align-items: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     padding: 15px;
     font-size: 16px;
 }
 footer > div > a {
   padding: 0 20px;
+}
+
+@media (max-width: 767px){
+
+  .home > section {
+    display: flex;
+    flex-direction: column;
+  }
+  .home > section > div {
+    margin: 20px 0;
+  }
+  .home > section > div > img {
+    transform: scale(0.7);
+  }
+
+  .resume {
+    flex-direction: column;
+  }
+  .resume > .container1{
+    min-width: 308px;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+  footer > div > a{
+    display: inline-block;
+    margin: 10px 0;
+  }
+  footer > p{
+    margin: 10px 0;
+  }
 }
