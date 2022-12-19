@@ -29,6 +29,22 @@ nav > div > a:hover {
 nav > div > a > img{
   margin: 0 5px;
 }
+nav >  #hamburguer-icon {
+  display: none;
+}
+
+@media (max-width: 475px){
+  nav >  #hamburguer-icon{
+    display: block;
+  }
+  nav > div > a {
+    display: none;
+  }
+}
+
+
+
+
 
 /* main - home.ejs */
 
@@ -46,7 +62,8 @@ main{
 }
 .home > section > div {
   line-height: 1.5;
-  width: 300px;
+  min-width: 300px;
+  padding: 0 10px;
 }
 .home > section > div > h1 >span{
   color: #8a2be2;
