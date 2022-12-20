@@ -33,12 +33,13 @@ nav >  #hamburguer-icon {
   display: none;
   justify-content: center;
   color: white;
+  cursor: pointer;
 }
 #menu{
   display: none;
   background-color: #000000db;
-  text-align: center;
   padding: 5px 0;
+  text-align: center;
 }
 #menu > a{
   color: white;
@@ -49,6 +50,9 @@ nav >  #hamburguer-icon {
 }
 #menu > a:hover{
   color:#8a2be2;
+}
+#menu > a > img{
+  margin: 0 5px;
 }
 
 /* main - home.ejs */
@@ -62,15 +66,43 @@ main{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
 }
 .home > section > div {
   line-height: 1.5;
   min-width: 300px;
   padding: 0 10px;
 }
-.home > section > div > h1 >span{
-  color: #8a2be2;
+.home > section > div > p{
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.507);
+  font-size: 20px;
+  opacity: .5;
+}
+.home > .findMeOn{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.home > .findMeOn > div > a{
+  display: inline-block;
+  padding: 7px 10px 3px 10px;
+  background-color: white;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 5px;
+}
+.home > .findMeOn > h3{
+  padding-bottom: 20px;
+}
+hr{
+  width: 5vw;
+  margin: 40px auto 0px auto;
+  border-style: dotted;
+  border-top: 0;
+  border-width: 10px;
+  border-color: #8a2be2;
+
 }
 
 /* main - resume.ejs */
@@ -125,6 +157,12 @@ main{
   border-radius: 5px;
   border-color: #8a2be2;
   background-color: #8a2be2;
+  box-shadow: 0 5px 0 #892be291;
+}
+#btn > a:active{
+  position: relative;
+  box-shadow: none;
+  top: 5px;
 }
 
 /* main - about.ejs */
@@ -132,7 +170,10 @@ main{
 .about > h1 {
   display: flex;
   justify-content: center;
-  padding: 30px 0 10px 0;
+  padding: 30px 0 50px 0;
+  font-size: 40px;
+  text-decoration: underline;
+  color: #8a2be2;
 }
 .about > .txt-container{
   max-width: 650px;
@@ -144,30 +185,23 @@ main{
   font-size: 20px;
   padding: 20px;
 }
-.about> .skill-container{
+.about> section{
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.about > .skill-container > div {
+.about > section > div {
   padding: 10px;
   align-items: center;
 }
-.about > .skill-container > div > img:hover{
-  transform: scale(1.15);
+.about > section > div > img:hover{
+  transform: scale(1.20);
   transition: 1s;
 }
-.about > .skill-container > h3 {
-  border: 1px solid #8a2be2;
-  color: white;
-  min-width: 150px;
-  height: 100px;
-  border-radius: 5px;
-  margin: 0 15px;
-}
-.about > .skill-container > h3:hover {
-  transition-duration: .5s;
-  transform: scale(1.2);
+#move-top{
+  position: relative;
+  top: -20px;
+  padding-bottom: 0;
 }
 
 /* Footer */
