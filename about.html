@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="public/images/gc-icon.png">
+        </div>
+        <span id="hamburguer-icon" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <div id="itens">
+            <a href="index.html"><img src="public/images/home-icon.png">Home</a>
+            <a href="about.html"><img src="public/images/about-icon.png">About</a>
+            <a href="resume.html"><img src="public/images/resume-icon.png">Resume</a>
+        </div>
+    </nav>
+    <div id="menu">
+        <a href="index.html"><img src="public/images/home-icon.png">Home</a><br>
+        <a href="about.html"><img src="public/images/about-icon.png">About</a><br>
+        <a href="resume.html"><img src="public/images/resume-icon.png">Resume</a><br>
+    </div>
+    <main class="about">
+        <h1><span style="color: #8a2be2">Let me introduce myself</span></h1>
+        <div class="txt-container">
+             <p>Hi, my name is Gabriel de Carvalho Beltrão Farias. I'm student of engineering, but I would like to be a full-stack developer. On my free time I enjoy playing chess, studying and typing some code to get better at programming. I have dogs since I've been 3 years old, so I love dogs.</p>
+        </div>
+        <h1><span style="color: #8a2be2">My skills</span></h1>
+        <section class="skill-container">
+            <div>
+                <img src="public/images/html-logo.png">
+            </div>
+            <div>
+                <img src="public/images/css-logo.png">
+            </div>
+            <div>
+                <img src="public/images/js-logo.png">
+            </div>
+            <div>
+                <img src="public/images/github-logo-skills.png">
+            </div>
+            <div>
+                <img src="public/images/MySQL-logo.png">
+            </div>
+            <div>
+                <img src="public/images/node-logo.png">
+            </div>
+            <div>
+                <img src="public/images/npm-logo.png">
+            </div>
+         </section>
+         <h1><span style="color: #8a2be2">Goals to 2023</span></h1>
+         <section class="learn-container">
+            <div>
+                <img src="public/images/react-logo.png">
+            </div>
+            <div>
+                <img src="public/images/python-logo.png">
+            </div>
+            <div>
+                <img src="public/images/php-logo.png">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by Gabriel Beltrão</p>
+        <p>Copyright &copy 2022</p>
+        <div>
+            <a href="https://github.com/gcbeltrao"><img src="public/images/github-logo.png" alt="link github"></a>
+            <a href="https://www.linkedin.com/in/gabriel-beltr%C3%A3o-8b7a0a240"><img src="public/images/Linkedin-logo.png" alt="link linkedin"></a>
+            <a href="https://www.instagram.com/gcbeltrao/"><img src="public/images/instagram-logo.png" alt="link instagram"></a>
+        </div>
+    </footer>
+    <script>
+        function clickMenu() {
+            if(menu.style.display==="block"){
+            menu.style.display="none";
+            } else {
+                menu.style.display="block";
+            } 
+        }
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="public/images/gc-icon.png">
+        </div>
+        <span id="hamburguer-icon" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <div id="itens">
+            <a href="index.html"><img src="public/images/home-icon.png">Home</a>
+            <a href="about.html"><img src="public/images/about-icon.png">About</a>
+            <a href="resume.html"><img src="public/images/resume-icon.png">Resume</a>
+        </div>
+    </nav>
+    <div id="menu">
+        <a href="index.html"><img src="public/images/home-icon.png">Home</a><br>
+        <a href="about.html"><img src="public/images/about-icon.png">About</a><br>
+        <a href="resume.html"><img src="public/images/resume-icon.png">Resume</a><br>
+    </div>
+    <div id="btn">
+        <a href="public/pdf/curriculo.pdf">Download Resume</a>
+    </div>
+    <main class="resume">
+        <section class="container1">
+            <div>
+                <h2>Contato:</h2>
+                <p>gbcarvalhof@gmail.com</p><br>
+                <a href="www.linkedin.com/in/gabriel- beltrão-8b7a0a240">www.linkedin.com/in/gabriel- beltrão-8b7a0a240 <span style="color:grey">(LinkedIn)</a>
+                <a href="www.github.com/gcbeltrao">github.com/gcbeltrao <span style="color:grey">(Github)</span></a>
+            </div>
+        </section>
+        <section class="container2">
+            <div>
+                <h1>Gabriel Beltrão</h1>
+                <p>Desenvolvedor Front-end | Estudante de Engenharia </p>
+                <p><span style="color:grey">Recife, Pernambuco, Brasil</span></p>
+    
+                <h3>Resumo</h3>
+                <p>Estudante de engenharia e admirador da tecnologia.</p><br>
+                <p>Comecei estudando engenharia civil, mas ao fim do curso me aproximei da área de tecnologia que me despertou um grande interesse. Então, comecei a estudar e aprender coisas novas em cursos, bootcamps e projetos para ter o aprendizado necessário almejando introduzir na área.</p><br>
+                <p>Web Development:</p>
+                <ul>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>Javascript</li>
+                    <li>MySQL</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                </ul>
+    
+                <h3>Experiência</h3>
+                <p>CREA-PE</p>
+                <p>Estagiário</p>            
+                <p>dezembro de 2021 - outubro de 2022 (11 meses)</p>
+    
+                <h3>Formação acadêmica</h3>
+                <p>Universidade de Pernambuco</p>
+                <p>Engenharia Civil · (janeiro de 2019 - dezembro de 2023)</p><br>
+                <p>Udemy Alumni</p>
+                <p>Curso, Desenvolvedor Full-Stack · (julho de 2022 - dezembro de 2022)</p><br>
+                <p>Curso em Vídeo</p>
+                <p>Curso, HTML5 e CSS3 · (julho de 2022 - julho de 2022)</p><br>
+                <p>Curso em Vídeo</p>
+                <p>Curso, Javascript · (setembro de 2022 - setembro de 2022)</p><br>
+                <p>Curso em Vídeo</p>
+                <p>Curso, MySQL · (outubro de 2022 - outubro de 2022)</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by Gabriel Beltrão</p>
+        <p>Copyright &copy 2022</p>
+        <div>
+            <a href="https://github.com/gcbeltrao"><img src="public/images/github-logo.png" alt="link github"></a>
+            <a href="https://www.linkedin.com/in/gabriel-beltr%C3%A3o-8b7a0a240"><img src="public/images/Linkedin-logo.png" alt="link linkedin"></a>
+            <a href="https://www.instagram.com/gcbeltrao/"><img src="public/images/instagram-logo.png" alt="link instagram"></a>
+        </div>
+    </footer>
+    <script>
+        function clickMenu() {
+            if(menu.style.display==="block"){
+            menu.style.display="none";
+            } else {
+                menu.style.display="block";
+            } 
+        }
+    </script>
+    </body>
+    </html>

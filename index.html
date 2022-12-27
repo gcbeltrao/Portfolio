@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="public/images/gc-icon.png">
+        </div>
+        <span id="hamburguer-icon" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <div id="itens">
+            <a href="index.html"><img src="public/images/home-icon.png">Home</a>
+            <a href="about.html"><img src="public/images/about-icon.png">About</a>
+            <a href="resume.html"><img src="public/images/resume-icon.png">Resume</a>
+        </div>
+    </nav>
+    <div id="menu">
+        <a href="index.html"><img src="public/images/home-icon.png">Home</a><br>
+        <a href="about.html"><img src="public/images/about-icon.png">About</a><br>
+        <a href="resume.html"><img src="public/images/resume-icon.png">Resume</a><br>
+    </div>
+
+    <main class="home">
+        <section>
+            <div>
+                <h1>Hello there!</h1>
+                <h1>I'm <span style="color:#8a2be2">Gabriel Beltrão</span></h1>
+                <h1><span class="auto-type" style="color:#8a2be2"></span></h1>
+                <p>"Do, or do not. There is no try" - Master Yoda</p>
+            </div>
+            <div class="image">
+                <img src="public/images/perfil.png">
+            </div>
+        </section>
+        <div>
+            
+        </div>
+        <hr>
+        <section class="findMeOn">
+            <h3>You can talk to me on</h3>
+            <div>
+                <a href="https://github.com/gcbeltrao"><img src="public/images/github-logo-find-me-on.png" alt="link github"></a>
+                <a href="https://www.linkedin.com/in/gabriel-beltr%C3%A3o-8b7a0a240"><img src="public/images/linkedin-logo-find-me-on.png" alt="link linkedin"></a>
+                <a href="https://www.instagram.com/gcbeltrao/"><img src="public/images/instagram-logo-find-me-on.png" alt="link instagram"></a>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <p>Developed by Gabriel Beltrão</p>
+        <p>Copyright &copy 2022</p>
+        <div>
+            <a href="https://github.com/gcbeltrao"><img src="public/images/github-logo.png" alt="link github"></a>
+            <a href="https://www.linkedin.com/in/gabriel-beltr%C3%A3o-8b7a0a240"><img src="public/images/Linkedin-logo.png" alt="link linkedin"></a>
+            <a href="https://www.instagram.com/gcbeltrao/"><img src="public/images/instagram-logo.png" alt="link instagram"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Engineer", "Front-end Developer", "Fullstack Developer"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            loop: true
+        });
+    </script>
+    <script>
+        function clickMenu() {
+            if(menu.style.display==="block"){
+            menu.style.display="none";
+            } else {
+                menu.style.display="block";
+            } 
+        }
+    </script>
+    </body>
+    </html>
